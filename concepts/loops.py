@@ -26,19 +26,24 @@
 # Note : the else will not be executed if the loop is stopped by a break statement
 
 # continue in python
-for i in range (8):
-    if i == 3:
-        continue 
-    print(i)
+# for i in range (8):
+#     if i == 3:
+#         continue 
+#     print(i)
 
-
+# skip the iteration if i == 3  and continue with next iteration 
 
 
 # nested loops in python
-num1= [1,3,5,7]
-num2=[2,4,6,8]
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
 
+for x in range(3): 
+    for y in fruits:
+        print(x,y)
+    
 
+# the inner loop will be executed one time for each iteration of the outer loop 
 # pass statement does nothing but you can use pass to avoid getting error due to empty loops or conditionals
 
 
