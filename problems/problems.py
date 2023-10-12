@@ -53,10 +53,53 @@
 
 
 # print the floyds triangle
-count = 0 
-for i in range (3):
-    for j in range (i+1):
-        print(count,end= "")
-        count += 1 
-    print('\n')
+# count = 0 
+# for i in range (3):
+#     for j in range (i+1):
+#         print(count,end= "")
+#         count += 1 
+#     print('\n')
 
+# multiplication table 
+
+# n = int(input("Enter a number"))
+# multiply = 1
+# for i in range(10+1):
+#    multiply = n * i 
+#    print(multiply)
+
+# Write a program to display only those numbers from a list that satisfy the following conditions
+#  The number must be divisible by five
+#  If the number is greater than 150, then skip it and move to the next number
+#  If the number is greater than 500, then stop the loop
+numbers = [12, 75, 150, 180, 145, 525, 50]
+
+# for i in numbers:
+#     if i % 5 == 0:
+#         if i > 150 :
+#             continue
+        
+#         if i > 500 :
+#             break
+#         print(i)
+
+# First check the conditions that is not valid which will filter the items and then you can print it 
+# for i in numbers:
+#     if(i > 500 ):
+#         break
+#     elif(i > 150 ):
+#         continue
+#     elif(i % 5 == 0):
+#         # print(i)
+#         pass 
+
+# first check which will filter the values and than do the necessary things
+
+# count the total number of digits in a number 
+
+number  = 959250
+count = 0
+while number != 0 :
+    number = number // 10 #Reducing each digit at a time
+    count += 1 
+print(count)

@@ -35,15 +35,16 @@
 
 
 # nested loops in python
-adj = ["red", "big", "tasty"]
-fruits = ["apple", "banana", "cherry"]
+# adj = ["red", "big", "tasty"]
+# fruits = ["apple", "banana", "cherry"]
 
-for x in range(3): 
-    for y in fruits:
-        print(x,y)
+# for x in range(3): 
+#     for y in fruits:
+#         print(x,y)
     
 
 # the inner loop will be executed one time for each iteration of the outer loop 
+
 # pass statement does nothing but you can use pass to avoid getting error due to empty loops or conditionals
 
 
