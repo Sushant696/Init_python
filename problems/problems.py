@@ -97,9 +97,26 @@ numbers = [12, 75, 150, 180, 145, 525, 50]
 
 # count the total number of digits in a number 
 
-number  = 959250
-count = 0
-while number != 0 :
-    number = number // 10 #Reducing each digit at a time
-    count += 1 
-print(count)
+# number  = 959250
+# count = 0
+# while number != 0 :
+#     number = number // 10 #Reducing each digit at a time
+#     count += 1 
+# print(count)
+
+
+# Print the oposite triangle 
+
+# count = 5
+# row = 5
+# for i in range (row):
+#     for j in range(count - i , 0 , -1):
+#         print(j , end=' ')
+#     print('\n')
+    
+list1 = [10, 20, 30, 40, 50]
+
+b = list1[::-1]
+print(b)
+
+    
