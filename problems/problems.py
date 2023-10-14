@@ -119,8 +119,19 @@ numbers = [12, 75, 150, 180, 145, 525, 50]
 # b = list1[::-1]
 # print(b)
 
-n = 5 
-for i in range(5): 
-    print(i)
-else:
-    print("Done")
+# n = 5 
+# for i in range(5): 
+#     print(i)
+# else:
+#     print("Done")
+
+# few questions are being solved!!
+#  Write a Python program to find those numbers which are divisible by 7 and multiples of 5, between 1500 and 2700 (both included).
+
+n = 1500
+for i in range(n): 
+    if(n % 5 == 0 and n % 7 == 0 ):
+        if (n >= 1500 and n <= 2700):
+            print(n, end = " ")
+    n += 1 
+# I did it in the first step !!!
