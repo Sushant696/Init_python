@@ -114,9 +114,13 @@ numbers = [12, 75, 150, 180, 145, 525, 50]
 #         print(j , end=' ')
 #     print('\n')
     
-list1 = [10, 20, 30, 40, 50]
+# list1 = [10, 20, 30, 40, 50]
 
-b = list1[::-1]
-print(b)
+# b = list1[::-1]
+# print(b)
 
-    
+n = 5 
+for i in range(5): 
+    print(i)
+else:
+    print("Done")
