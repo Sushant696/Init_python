@@ -47,5 +47,31 @@
 
 # pass statement does nothing but you can use pass to avoid getting error due to empty loops or conditionals
 
+# write a program to take an word from user and reverse it 
+
+# n = input("Enter a word you want to reverse  ")
+
+# a = n[::-1]
+# print(a)
+
+# Write a Python program that iterates the integers from 1 to 50. For multiples of three print "Fizz" instead of the number and for multiples of five print "Buzz". For numbers that are multiples of three and five, print "FizzBuzz".
+
+# for i in range(51):
+#     if i % 3 == 0 and i % 5 == 0:
+#         print("fizzBuzz")
+#     elif i % 3 == 0 :
+#         print("fizz")
+#     elif i % 5 == 0 :
+#         print("Buzz")
+#     else:
+#         print(i)
 
 
+# Write a Python program to check the validity of passwords input by users.
+# Validation :
+
+# At least 1 letter between [a-z] and 1 letter between [A-Z].
+# At least 1 number between [0-9].
+# At least 1 character from [$#@].
+# Minimum length 6 characters.
+# Maximum length 16 characters.
