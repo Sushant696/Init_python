@@ -69,19 +69,19 @@
 
 # fibonacci series 0, 1, 1, 2, 3, 5, 8, 13, 21
 
-num1,num2 = 0 , 1 
-num3  = 0 
-n =int(input("Enter a number"))
-for i in range (n):
-    if i == 0 :
-        print(num1)
-    elif i == 1:
-        print(num2)
-    else :
-        num3 = num1 + num2
-        num1 = num2
-        num2 = num3 
-        print(num3)
+# num1,num2 = 0 , 1 
+# num3  = 0 
+# n =int(input("Enter a number"))
+# for i in range (n):
+#     if i == 0 :
+#         print(num1)
+#     elif i == 1:
+#         print(num2)
+#     else :
+#         num3 = num1 + num2
+#         num1 = num2
+#         num2 = num3 
+#         print(num3)
 
 
 
@@ -90,6 +90,16 @@ for i in range (n):
 
 # ************************** Solve these problems*********************
 # Write a Python program to find numbers between 100 and 400 (both included) where each digit of a number is an even number. The numbers obtained should be printed in a comma-separated sequence.
+
+n = 400
+lists = []
+
+for i in range (99,n + 1):
+    if i % 2 == 0 :
+        lists.append(i)
+
+
+print(lists)
 
 
 # Write a Python program to check the validity of passwords input by users.
