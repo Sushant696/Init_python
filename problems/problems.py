@@ -134,4 +134,4 @@ for i in range(n):
         if (n >= 1500 and n <= 2700):
             print(n, end = " ")
     n += 1 
-# I did it in the first step !!!
+# I did it in the first time !!!
