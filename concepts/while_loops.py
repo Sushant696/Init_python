@@ -26,4 +26,4 @@ while guess_left > 0:
 
     guess_left -= 1
 
-# i made the number guessing game by my self
+
