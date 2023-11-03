@@ -66,6 +66,18 @@ thisdict = {
   "year": 1964
 }
 thisdict.pop('model')
-print((thisdict))
+# print((thisdict))
 
 #  Write a Python program to multiply all the items in a dictionary.
+new_dict = {
+    'value1' : 1,
+    'value2' : 18 ,
+    "value3" : 118,
+}
+# Extracting the values 
+v = new_dict.values()
+# multiply values
+m = 1
+for i in v:
+    m *= i
+print(m)
