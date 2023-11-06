@@ -1,5 +1,6 @@
 import random
 from stages import logo
+from words import word_list
 print(logo)
 
 # def welcome():
@@ -8,38 +9,14 @@ print(logo)
 #     print(f"HI!{name} Let's begin the game")
 # welcome()
 
-word_list = [
-'python',
-'absurd',
-'nightclub',
-'quantum',
-'computer',
-"function",
-'jukebox',
-'strength',
-"conditional",
-'krugger', 
-'awareness',
-"debugging",
-'jiujitsu',
-"database",
-"optimization",
-"framework",
-"interface",
-"authentication",
-"version",
-"iteration",
-"repository",
-"variable",
-"authorization"
-
-,]
 
 # assign random word to the user
+
 chosen_word = random.choice(word_list)
-print('The number you have to guess is:',chosen_word)
+print('The number you have to guess is:',chosen_word )
 display = ['_']*len(chosen_word)
-print(display)
+print(display) 
+chosen_word.upper()
 
 
 # check if that word has that letter 
@@ -50,9 +27,22 @@ min_attempts = 0
 max_attempts = 6
 
 while max_attempts >= min_attempts :
-    guess = input("guess the letter").lower()
+    # word verification
+    guess = input("Guess the letter ").upper()
     if len(guess) != 1 or not guess.isalpha():
-        print("please enter a single letter:") 
+        print("please enter a single letter: ") 
+    else:
+        print("not a valid guess")
+    print(display)
+
+
+    
+#   current guess has the letter in it ? 
+# chosen_word is full word and guess just has one letter so we should put the chosen word inside of the loop
+    for i in chosen_word:
+        if (guess == i):
+            chosen_word.join(i)
+            print(guess)
 
 
     min_attempts +=1
