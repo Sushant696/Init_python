@@ -24,27 +24,37 @@ chosen_word.lower()
 
 min_attempts = 0 
 max_attempts = 6
+letter_in_word = False
 
 while max_attempts >= min_attempts :
+
     # word verification
     user_guess = input("Guess the letter ").lower()
     if len(user_guess) != 1 or not user_guess.isalpha():
         print("please enter a single letter: ")
         continue
 
-    
 
+    # guessing the letter
+    for i in range(len(chosen_word)):
+        if user_guess == chosen_word[i]:
+            display[i] = user_guess
+            letter_in_word = True
 
-
-    # for i in chosen_word:
-    #     if user_guess == i :
-    #         display.append(user_guess)
-    #         print(display)
+    if letter_in_word:
+        print(display)
+    else:
+        print('sorry, the letter doesn\'t match')
 
 # match the user's current guess with the letters present in word if matched then append it but how to know the index of that letter . need some sort of counter 
-
 
 
     print(stages[min_attempts])
     print(display)
     min_attempts +=1
+
+
+    # the program is working but i have to add the condition like if the user_entered value is present inside the word then don't update the hangman state 
+
+    # the min_try should only update when the user's input is false 
+    # The loop is not fucking working
