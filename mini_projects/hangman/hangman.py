@@ -1,22 +1,21 @@
 import random
 from stages import logo
 from words import word_list
-print(logo)
-
-# def welcome():
-    # print('Welcome to the Hangman Game!,hangman_logo')
-#     name = input()
-#     print(f"HI!{name} Let's begin the game")
-# welcome()
+from stages import stages
 
 
-# assign random word to the user
+# print(f'{logo}\nWelcome to the Hangman Game!!')
+#name = input()
+#print(f"HI!{name} Let's begin the game")
+
+
+
 
 chosen_word = random.choice(word_list)
 print('The number you have to guess is:',chosen_word )
 display = ['_']*len(chosen_word)
 print(display) 
-chosen_word.upper()
+chosen_word.lower()
 
 
 # check if that word has that letter 
@@ -28,21 +27,24 @@ max_attempts = 6
 
 while max_attempts >= min_attempts :
     # word verification
-    guess = input("Guess the letter ").upper()
-    if len(guess) != 1 or not guess.isalpha():
-        print("please enter a single letter: ") 
-    else:
-        print("not a valid guess")
-    print(display)
-
+    user_guess = input("Guess the letter ").lower()
+    if len(user_guess) != 1 or not user_guess.isalpha():
+        print("please enter a single letter: ")
+        continue
 
     
-#   current guess has the letter in it ? 
-# chosen_word is full word and guess just has one letter so we should put the chosen word inside of the loop
-    for i in chosen_word:
-        if (guess == i):
-            chosen_word.join(i)
-            print(guess)
 
 
+
+    # for i in chosen_word:
+    #     if user_guess == i :
+    #         display.append(user_guess)
+    #         print(display)
+
+# match the user's current guess with the letters present in word if matched then append it but how to know the index of that letter . need some sort of counter 
+
+
+
+    print(stages[min_attempts])
+    print(display)
     min_attempts +=1
