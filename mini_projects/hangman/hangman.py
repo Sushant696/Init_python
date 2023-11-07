@@ -4,29 +4,27 @@ from words import word_list
 from stages import stages
 
 
-# print(f'{logo}\nWelcome to the Hangman Game!!')
-#name = input()
-#print(f"HI!{name} Let's begin the game")
+name = input('Enter your game name:')
+print(f'{logo}\nWelcome to the Hangman Game!!')
+print(f"HI! {name} Let's begin the game")
 
-
-
-
+random.shuffle(word_list)
+random.shuffle(word_list)
+random.shuffle(word_list)
 chosen_word = random.choice(word_list)
-print('The number you have to guess is:',chosen_word )
+# print('The number you have to guess is:', chosen_word)
 display = ['_']*len(chosen_word)
-print(display) 
+print(
+    f'The word consist of {len(chosen_word)} letters it\'s first letter is {chosen_word[0]}')
+print(display)
 chosen_word.lower()
 
 
-# check if that word has that letter 
-# if the word has that letter then add that letter and display
-# use the max and min attempts concept  
-
-min_attempts = 0 
+min_attempts = 0
 max_attempts = 6
-letter_in_word = False
 
-while max_attempts >= min_attempts :
+while max_attempts >= min_attempts:
+    letter_in_word = False
 
     # word verification
     user_guess = input("Guess the letter ").lower()
@@ -34,27 +32,30 @@ while max_attempts >= min_attempts :
         print("please enter a single letter: ")
         continue
 
-
     # guessing the letter
     for i in range(len(chosen_word)):
         if user_guess == chosen_word[i]:
             display[i] = user_guess
             letter_in_word = True
 
+
+    # loosing condition
+    if min_attempts == max_attempts:
+        print(stages[min_attempts])
+        print(f"You lost, Try again. The correct word was {chosen_word}")
+        break
+
+    # letter present or not
     if letter_in_word:
         print(display)
+
     else:
-        print('sorry, the letter doesn\'t match')
+        print(stages[min_attempts])
+        print(
+            f'sorry, the letter doesn\'t match  {max_attempts - min_attempts} tries left \n')
+        min_attempts += 1
 
-# match the user's current guess with the letters present in word if matched then append it but how to know the index of that letter . need some sort of counter 
-
-
-    print(stages[min_attempts])
-    print(display)
-    min_attempts +=1
-
-
-    # the program is working but i have to add the condition like if the user_entered value is present inside the word then don't update the hangman state 
-
-    # the min_try should only update when the user's input is false 
-    # The loop is not fucking working
+    # winning condition
+    if '_' not in display:
+        print('congratulations, You won the game')
+        break
