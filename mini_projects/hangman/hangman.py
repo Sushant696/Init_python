@@ -10,7 +10,6 @@ print(f"HI! {name} Let's begin the game")
 
 random.shuffle(word_list)
 random.shuffle(word_list)
-random.shuffle(word_list)
 chosen_word = random.choice(word_list)
 # print('The number you have to guess is:', chosen_word)
 display = ['_']*len(chosen_word)
@@ -51,6 +50,7 @@ while max_attempts >= min_attempts:
 
     else:
         print(stages[min_attempts])
+        print(display)
         print(
             f'sorry, the letter doesn\'t match  {max_attempts - min_attempts} tries left \n')
         min_attempts += 1
