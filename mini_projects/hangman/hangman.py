@@ -10,6 +10,7 @@ print(f"HI! {name} Let's begin the game")
 
 random.shuffle(word_list)
 random.shuffle(word_list)
+random.shuffle(word_list)
 chosen_word = random.choice(word_list)
 # print('The number you have to guess is:', chosen_word)
 display = ['_']*len(chosen_word)
