@@ -61,3 +61,5 @@ txt = 'banana'
 ntxt = txt.center(20)
 print(ntxt)
 print(dir(txt))
+
+
