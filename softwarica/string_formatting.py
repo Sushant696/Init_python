@@ -18,6 +18,7 @@ works_for = 'Google'
 string = "my name is %s i am a %s at %s" % (name, profession, works_for)
 string = "Inserted number is %5.2f" % 3.28364
 print(string)
+
 # print(string)
 # If there are more than one strings that you want to insert in a string than use this tuple format.
 
@@ -26,8 +27,10 @@ print(string)
 book_name = "Unthered Soul"
 author = "Michael Alan Singer"
 
-new_string = 'My Favourite Book is  {} it\'s written by {}'.format(
+# can access the data using indexing too
+new_string = 'My Favourite Book is  {0} it\'s written by {1}'.format(
     book_name, author)
+
 # print(new_string)
 
 # string formating using f string
@@ -47,7 +50,9 @@ print(details)
 
 # python string templates
 s = Template("$who wants $what")
+print(s.substitute(who='sushant' , what="Enthusiasm"))
 print(s.safe_substitute(who='sushant' , what="Enthusiasm"))
+
 
 
 # python center method for formatting
@@ -55,3 +60,4 @@ print(s.safe_substitute(who='sushant' , what="Enthusiasm"))
 txt = 'banana'
 ntxt = txt.center(20)
 print(ntxt)
+print(dir(txt))
