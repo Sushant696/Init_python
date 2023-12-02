@@ -3,7 +3,6 @@ from stages import logo
 from words import word_list
 from stages import stages
 
-
 name = input('Enter your game name:')
 print(f'{logo}\nWelcome to the Hangman Game!!')
 print(f"HI! {name} Let's begin the game")
@@ -18,7 +17,6 @@ print(
     f'The word consist of {len(chosen_word)} letters it\'s first letter is {chosen_word[0]}')
 print(display)
 chosen_word.lower()
-
 
 min_attempts = 0
 max_attempts = 6

@@ -37,4 +37,4 @@ def fun(child1,child2):
 fun(child1='sushant',child2='someone')
 
 # Note : while using this kind of arguments in your function than the parameter and the arguments name should be similar.
-
+print('what the fuck is this streak bro')
