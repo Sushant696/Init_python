@@ -63,3 +63,6 @@ print(ntxt)
 print(dir(txt))
 print("the print method")
 
+
+
+# 
