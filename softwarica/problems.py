@@ -103,6 +103,7 @@
 # else :
 #     print("The userInput is not divisible by 3")
 
+
 # 10 multiple of 5 
 # num = eval(input('Enter a number '))
 
@@ -110,6 +111,7 @@
 #     print('hello')
 # else :
 #     print("bye")
+
 
 
 # 11 get a day of the week by entering 1-7
@@ -134,6 +136,7 @@
 #     print("please input numbers from 1-7")
 
 
+
 # 12 display a month in sequence
 # user_input = int(input('enter 1-7 to get the day'))
 
@@ -155,6 +158,7 @@
 #     print("please input numbers from 1-7")
 
 
+
 # 13 user_input = input('Enter a city name')
 
 # match user_input :
@@ -166,6 +170,7 @@
 #         print(f'Most visit monument in {user_input} is jal mahal')
 #     case __ :
 #         print("Invalid, Enter city name among agra , delhi and jaipur")
+
 
 
 # 14
@@ -180,6 +185,7 @@
 # else:
 #     print("invalid number")
 
+
 # 15
 # num1 = eval(input('enter a number'))
 # num2 = eval(input('enter a number'))
@@ -191,3 +197,55 @@
 #     print(f"The num2 = {num2} is the smallest of all")
 # elif(num3 < num1 and num3 < num2):
 #     print('The num 3  = {} is the smallest'.format(num3))
+
+
+# 16
+
+# userInput == int(input('enter you age'))
+
+
+# if (userInput > 18 ):
+#     print('Dear user you are eliglible for voting')
+# else:
+#     print('You are not old enough to vote')
+
+
+
+
+#  18
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+operator = input("Enter the operator: ")
+
+if operator == "+":
+    print(f"{num1} {operator} {num2} = {num1 + num2}")
+elif operator == "-":
+    print(f"{num1} {operator} {num2} = {num1 - num2}")
+elif operator == "*":
+    print(f"{num1} {operator} {num2} = {num1 * num2}")
+elif operator == "/":
+    print(f"{num1} {operator} {num2} = {num1 / num2}")
+elif operator == "**":
+    print(f"{num1} {operator} {num2} = {num1 ** num2}")
+elif operator == "//":
+    print(f"{num1} {operator} {num2} = {num1 // num2}")
+else:
+    print("invalid Mathematical Operator")
+
+
+
+# Question 19
+x = 1
+if x > 0:
+    print("True")
+elif x < 0:
+    print("False")
+else:
+    print("zero")
+
+
+# 20
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+address = input("Enter your address: ")
+print(F"Your name is {name}\nYour age is {age}\nYour address is {address}")

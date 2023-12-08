@@ -41,11 +41,3 @@
 #     print("please input numbers from 1-7")
 
 
-
-userInput == int(input('enter you number'))
-
-if (userInput % 2 == 0):
-    print('The number you entered in even')
-else:
-    print('The number you entered is odd')
-
