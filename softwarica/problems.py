@@ -235,17 +235,17 @@ else:
 
 
 # Question 19
-x = 1
-if x > 0:
-    print("True")
-elif x < 0:
-    print("False")
-else:
-    print("zero")
+# x = 1
+# if x > 0:
+#     print("True")
+# elif x < 0:
+#     print("False")
+# else:
+#     print("zero")
 
 
-# 20
-name = input("Enter your name: ")
-age = input("Enter your age: ")
-address = input("Enter your address: ")
-print(F"Your name is {name}\nYour age is {age}\nYour address is {address}")
+# # 20
+# name = input("Enter your name: ")
+# age = input("Enter your age: ")
+# address = input("Enter your address: ")
+# print(F"Your name is {name}\nYour age is {age}\nYour address is {address}")
