@@ -57,41 +57,41 @@
 #     print('The number you entered is odd')
 
 
-# 6 WAP which accepts marks of four subjects and display total marks, percentage and grade
-# Hint: more than 70% –> distinction, more than 60% –> first, more than 40% –> pass,less than 40% –> fail
+# # 6 WAP which accepts marks of four subjects and display total marks, percentage and grade
+# # Hint: more than 70% –> distinction, more than 60% –> first, more than 40% –> pass,less than 40% –> fail
 
-# Input from student
+# # Input from student
 
-maths = int(input("Maths marks"))
-programming= int(input("programmingmarks"))
-softwareDesign = int(input("softwareDesign marks"))
-Nepali = int(input("Nepali marks"))
+# maths = int(input("Maths marks"))
+# programming= int(input("programmingmarks"))
+# softwareDesign = int(input("softwareDesign marks"))
+# Nepali = int(input("Nepali marks"))
 
 
-# Variable for programs
+# # Variable for programs
 
-totalMarks = 400
-Obtained_marks = maths + programming + softwareDesign + Nepali
-percentage = (Obtained_marks / totalMarks) * 100
-distinction = percentage > 70
+# totalMarks = 400
+# Obtained_marks = maths + programming + softwareDesign + Nepali
+# percentage = (Obtained_marks / totalMarks) * 100
+# distinction = percentage > 70
 
 # print(f"total marks : {totalMarks}, obtainded marks:{Obtained_marks},percentage:{percentage}")
 
 # contition to know grade of the student
 
-if (distinction):
-    print(f'distinction with {percentage}%')
-elif(percentage > 60 and percentage < 70):
-    print(f'first division with {percentage}%')
-elif(percentage > 40 and percentage < 60):
-    print(f'pass with {percentage}%')
-elif(percentage < 40 and percentage >= 0):
-    print("fail")
-else:
-    print('Error occured')
+# if (distinction):
+#     print(f'distinction with {percentage}%')
+# elif(percentage > 60 and percentage < 70):
+#     print(f'first division with {percentage}%')
+# elif(percentage > 40 and percentage < 60):
+#     print(f'pass with {percentage}%')
+# elif(percentage < 40 and percentage >= 0):
+#     print("fail")
+# else:
+#     print('Error occured')
 
 
-#7 What is the output of ‘APPLE’ > ‘apple’?
+# 7 What is the output of ‘APPLE’ > ‘apple’?
 
 # a = 'apple'
 # b = "APPLE"
@@ -109,7 +109,6 @@ else:
 # cp = int(input('enter cp'))
 
 
-
 # if (cp > 1000000):
 #     tax = 15
 #     tax_amt = 15 /100 * cp
@@ -125,6 +124,7 @@ else:
 #     print(f"road tax for{cp} is {tax_amt}")
 # else :
 #     print("enter a valid number")
+
 
 # 9. Accept the age of 4 people and display the youngest one.
 
@@ -162,7 +162,6 @@ else:
 #     print('d is the smallest among all')
 
 
-
 # 11. Accept the percentage from the user and display the grade according to the following criteria:
 # Below 25 --D
 # 25 to 45  -- C
@@ -188,11 +187,86 @@ else:
 #     print('please enter valid percentage')
 
 
-
-
 # 12. A company decided to give bonus to employee according to following criteria:
 # Time period of service     Bonus
 # More than 10 years            10%
 # >=6 and <=10                       8%
 # Less than 6 years                 5%
+
+# experience = int(input("enter your time period of service"))
+
+# if (experience > 10):
+#     print('you will get bonus of 10%')
+# elif(experience >= 6 and experience <= 10):
+#     print('you are eligible for 8%\ bonus')
+# elif(experience < 6):
+#     print('you are eligible for 6%\ bonus')
+# else:
+#     print('enter a valid option')
+
+# 13 14. Accept the number of days from the user and calculate the charge for library according to following:
+# Till five days: Rs 2/day
+# Six to ten days: Rs 3/day
+# 11 to 15 days: Rs 4/day
+# After 15 days: Rs 5/day
+
+# change to charge according to the days and use that in you code that way no need to hard code
+# days = int(input("Enter number of days"))
+# charge = 0
+# if (days < 5):
+#     charge = 2 * days
+# elif(days> 6 and days <= 10):
+#     charge = 3 * days
+# elif (days>11 and days < 15):
+#     charge = 4 * days
+# elif(days > 15):
+#     charge = 5 * days
+# else:
+#     print("invalid input")
+
+#  Write a program to check two strings are anagram or not.
+# string1 = input('enter first string: ')
+# string2 = input('enter seccond string: ')
+# # print(len(string1))
+
+
+# def anagram(str1, str2):
+#     if (len(string1) != len(string2)):
+#         print("The string are not annagram: ")
+#     a = sorted(str1)
+#     b = sorted(str2)
+#     if (a == b):
+#         print(f'the words {string1} , {string2} is anagram ')
+#     else:
+#         print("the two strings are nots same!!!")
+
+
+# anagram(string1, string2)
+
+
+# 31. Accept the age, sex('M', 'F'), number of days and display the wages accordingly.
+# Age                       Sex    Wage/day
+# >=18 and <30      M        700
+#                               F         750
+# >=30 and <=40    M        800
+#                               F         850
+
+# age = int(input("Enter a number"))
+# sex = input("Enter a sex")
+# days = int(input("no of days"))
+# wages = 0 
+
+
+# if(sex== "male"):
+#     male()
+# elif(sex== "female"):
+#     female()
+
+# def male():
+#     pass
+
+# def female():
+#     pass 
+
+
 
