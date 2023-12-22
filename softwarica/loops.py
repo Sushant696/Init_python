@@ -100,27 +100,3 @@
 
 # for i in mylist:
 #     print(f"{i} is of {type(i)}")
-
-
-tries = 3
-
-for i in range(4):
-    if tries != 0:
-        email = input("Input your email address: ")
-        password = input('Input your password: ')
-        length = len(password)
-
-        if length < 8 and email == '':
-            print(f'The password should be at least 8 characters long. Tries left: {tries}')
-            tries = tries - 1
-
-        elif not email.endswith('@gmail.com'):
-            tries = tries - 1
-            print(f'Please use a proper email format. Tries left: {tries}')
-        elif "#" not in password and '*' not in password:
-            tries = tries - 1
-            print(f"At least one special character needed. Tries left: {tries}")
-        else:
-            print('You have successfully logged in')
-            break
-
