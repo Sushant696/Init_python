@@ -78,3 +78,78 @@
 
 
 # carefull with continue in while loop (infinite loops)
+
+# 7. reverse a list
+
+# mylist = [1,2,3,5]
+# i = 0 
+# reversed_list =[]
+
+# while (i < len(mylist)):
+#     print('hello')
+#     reversed_list = mylist[::-1]
+#     i += 1 
+# print(reversed_list)
+
+# given list is [1,2,3,4] but expected output in new list [2,3,4,5]
+
+# mylist = [1,2,3,4]
+# newList = []
+# i = 0 
+# while i < len(mylist):
+#     if (mylist[i]== 1):
+#         i += 1
+#         continue
+#     else:
+#         newList.append(mylist[i])
+#     if (mylist[i]==4):
+#         newList.append(5)
+#     i += 1
+# print(newList)
+
+
+# 9. Given list is lst=[1,2,3,4] but print 1 and 4 only 
+
+# mylist = [1,2,3,4]
+# # print 1 , 4 
+# i = 0 
+# while i < len(mylist):
+#     if mylist[i] == 1 or mylist[i]== 4 :
+#         print(mylist[i])
+#     i +=1
+
+# 15. Python program that accepts a string and calculate the number of digits and letters and space
+
+# 16. Python program to check the validity of username and password input by users
+
+# else with while 
+
+# i =0 
+# while i < 5 :
+#     if i == 3 :
+#         i += 1
+#         continue
+#         print(i)
+#     i = i + 1
+#     else :
+#         print('end of loop')
+
+
+# i = 0 
+# while i < 5 :
+# if i == 
+
+
+result = 1
+i = 8
+while i >= 2:
+    j = 1
+    while j <= 10 :
+        result = i *j
+        print(f'{i} * {j} = {result}')
+        j +=1
+    # result = i
+    print('\n')
+    i -=1
+
+
