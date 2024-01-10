@@ -71,7 +71,7 @@
 # print(add([1, 2, 3, 4]))
 
 
-# pi = 10 
+# pi = 10
 # def add ():
 #     pi = 21
 #     def inner():
@@ -82,23 +82,33 @@
 # print(b)
 
 
-# import for turtle
-import turtle
+# Higher order functions in python
 
-# Starting a Working Screen
-ws = turtle.Screen()
+# marks = [1,2,3,4,56,84]
 
-# initializing a turtle instance
-geekyTurtle = turtle.Turtle()
+# a = map(lambda x : x + 5,marks)
+# print(list(a))
 
-# executing loop 5 times for a star
-for i in range(5):
-
-		# moving turtle 100 units forward
-		geekyTurtle.forward(100)
-
-		# rotating turtle 144 degree right
-		geekyTurtle.right(144)
+# numbers = (1, 2, 3, 4)
+# result = map(lambda x: x + x, numbers)
 
 
+# filter higher component
 
+# marks = [1, 2, 3, 44, 5, 84]
+
+# a = filter(lambda x: x % 2 == 0, marks)
+# print(list(a))
+
+# from functools import reduce
+
+# # reduce higher component
+
+# marks = [1, 2, 3, 44, 5, 84]
+
+# a = reduce(lambda x ,y : x + y, marks)
+# print(a)
+
+# from login import login2
+# a = login.login2('haha')
+# print(a)
