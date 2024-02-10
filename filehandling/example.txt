@@ -1,0 +1,4 @@
+hello world this is sushant babu prasai learning the file handing in python 
+this is the second line of the file example.txt
+hello world this is the sushant babu prasai and i am here to help you all out 
+with all of your work so let me help you out.
