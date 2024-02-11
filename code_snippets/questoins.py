@@ -11,3 +11,12 @@ car = {
 car.popitem()
 
 print(car)
+
+
+# Floor Division
+result_floor = 10 // 3  # Result: 3
+print(result_floor)
+
+# Exponentiation
+result_exponent = 2 ** 3  # Result: 8
+print(result_exponent)
