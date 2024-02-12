@@ -17,7 +17,7 @@ print(result)  # result = 120
 # indirect recursion 
 
 def even_number(n):
-    if n == 0:
+    if n == 0:    # base case
         return True
     else:
         return odd_number(n - 1)
@@ -25,7 +25,7 @@ def even_number(n):
 def odd_number(n):
     return not even_number(n)
 
-result = odd_number(6)
+result = even_number(6) #true
 print(result)
 
 
