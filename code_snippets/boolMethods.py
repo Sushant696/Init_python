@@ -63,3 +63,13 @@ string = 'found than index of that element if not found return -1'
 # string = 'is title check if the each work in string has capital first letter in each work if the first letter is not capital then it\'s not title'
 # print('0100'.isdecimal())
 
+# real and imag in python (complex numbers)
+
+# complex is represent this way (a + bj) a is real part and b is imaginary part where j is the imaginary unit .
+complex_number =  4j
+# _____________________ The real part can be zero but real can't be zero and if real is zero then you get 0.0 ___ you don't get error if you didn't write real part you still get 0.0
+ 
+print(complex_number.real , complex_number.imag) # 1.0 4.0
+
+
+

@@ -15,6 +15,7 @@ string = 'python'
 string1  = "programming"
 
 result = 'i love {0} {0}'.format({string})
+
 # names arguments
 result = 'i love {greeting} {age}'.format(greeting  = string , age = 'string1' )
 
@@ -46,4 +47,14 @@ print(translated_string)
 # The translate method takes in the data or ascii value as in the form of dictionary and changes it.
  
 
-print("Welcome {} softwarica".format("tw")) 
+# print("Welcome {} softwarica".format("tw")) 
+
+
+# a="123abc"
+# b=a.maketrans("type","data")
+# print(a.translate(b))
+
+# print("I love {} {}language".format("python"))
+
+# print("I love {0} {a}".format(b='language',a = "python"))
+# print("I love {} {}".format('language',"python"))
