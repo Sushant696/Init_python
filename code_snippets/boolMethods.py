@@ -66,10 +66,32 @@ string = 'found than index of that element if not found return -1'
 # real and imag in python (complex numbers)
 
 # complex is represent this way (a + bj) a is real part and b is imaginary part where j is the imaginary unit .
-complex_number =  4j
+# complex_number =  4j
 # _____________________ The real part can be zero but real can't be zero and if real is zero then you get 0.0 ___ you don't get error if you didn't write real part you still get 0.0
  
-print(complex_number.real , complex_number.imag) # 1.0 4.0
+# print(complex_number.real , complex_number.imag) # 1.0 4.0
 
 
+# a = [1,2,3,4,5,6]
+# a.pop(a[3])
+# print(a)
 
+# a={1,2,3,4}
+# a.add((2,3))
+# print(a)
+
+
+# start = 10
+# end = 50
+
+# for num in range(start, end + 1):
+#     if num > 1:
+#         for i in range(2, num):
+#             if (num % i) == 0:
+#                 break
+#         else:
+#             print(num)
+
+
+# string = "Hello world is  this is me sushant is babu prasai"
+# print(string.split('me',4))
