@@ -8,25 +8,16 @@
 # # print (factorial (num))
 
 # def prime_number(num):
-#     '''
-#     This Function checks if number is prime or not
-
-#     args,
-#     num : number to be checked
-
-#     returns,
-#     True is the numbers is prime, otherwise false
-#     '''
+     
 #     if (num <= 2):
 #         print("Please enter number greater than 2")
 #         return False
 
-#     flag = -1
+#     flag = True
 #     for i in range(3, num):
 #         if num % i == 0:
 #             flag = False
 #             return flag
-
 #         else:
 #             flag = True
 
@@ -59,10 +50,10 @@
 
 # print(f"digit = {digitCount} \n space = {spaceCount} \n letter = {letterCount}")
 
-lst = [11,32,-19,92,-83,189,-1]
-lst1 = []
+# lst = [11,32,-19,92,-83,189,-1]
+# lst1 = []
 
-for i in lst:
-    if i >= 0 :
-        lst1.append(i)
-print(lst1)
+# for i in lst:
+#     if i >= 0 :
+#         lst1.append(i)
+# print(lst1)
