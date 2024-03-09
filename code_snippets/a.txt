@@ -1,1 +1,2 @@
 hello the i wrote i the file.
+hello this is the second line manually doing stuffs

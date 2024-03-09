@@ -1,1 +1,1 @@
-<_io.TextIOWrapper name='b.txt' mode='r' encoding='cp1252'>
+written into the file
